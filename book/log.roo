@@ -1,0 +1,92 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-29 15:13:45
+project --topLevelPackage com.aosta.book --projectName book --java 7 --packaging JAR
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-29 15:13:54
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-29 15:13:57
+jpa setup --database MYSQL --provider HIBERNATE --databaseName aostacms --userName root --password aosta
+entity jpa --class com.aosta.book.BookOrder
+field string --fieldName BookName
+field string --fieldName DeliverAddress --column --sizeMax 300
+web mvc setup 
+web mvc all --package com.aosta.book.web
+pgp automatic trust
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.web
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon search cloud
+addon info id --searchResultId 01
+osgi start --url http://spring-roo-repository.springsource.org/release/org/springframework/roo/wrapping/org.springframework.roo.wrapping.cloud-foundry-api/0.0.1.0010/org.springframework.roo.wr7apping.cloud-foundry-api-0.0.1.0010.jar
+osgi start --url http://spring-roo-repository.springsource.org/release/org/springframework/roo/wrapping/org.springframework.roo.wrapping.cloud-foundry-api/0.0.1.0010/org.springframework.roo.wrapping.cloud-foundry-api-0.0.1.0010.jar
+pgp automatic trust
+pgp automatic trust
+osgi start --url httppgp://spring-roo-repository.springsource.org/release/org/springframework/roo/wrapping/org.springframework.roo.wrapping.cloud-foundry-api/0.0.1.0010/org.springframework.roo.wrapping.cloud-foundry-api-0.0.1.0010.jar
+osgi start --url file:////home/aosta/Downloads/org.springframework.roo.wrapping.cloud-foundry-api-0.0.1.0010.jar
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry;1.1.5.RELEASE
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.cloud.foundry;1.1.5.RELEASE
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install bundle --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.web
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.web
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install bundle --bundleSymbolicName org.springframework.web
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install bundle --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-29 17:09:20
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-29 17:10:30
+addon install bundle --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+addon install bundle --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi ps
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon search cloud
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+osgi find --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.addon.cloud.foundry;1.1.5.RELEASE
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install bundle --bundleSymbolicName org.springframework.roo.addon.cloud.foundry;1.1.5.RELEASE
+addon search cloud
+addon info id --searchResultId 01
+osgi start --url file:////home/aosta/Downloads/org.springframework.roo.addon.cloud.foundry-1.2.4.RELEASE.jar
+osgi install --url file:////home/aosta/Downloads/org.springframework.roo.addon.cloud.foundry-1.2.4.RELEASE.jar
+addon install id 87
+addon install id --searchResultId 87
+osgi ps
+osgi log 
+osgi resolve --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi ps
+osgi resolve --bundleSymbolicName org.springframework.roo.wrapping.cloud-foundry-api
+osgi start --url file:////home/aosta/Downloads/org.springframework.roo.addon.cloud.foundry-1.2.4.RELEASE.jar
+addon search vmware cloud foundry
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-29 17:42:06
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-29 17:44:55
+osgi ps 
+pgp automatic trust 
+pgp automatic trust 
+hint 
+hint login
+hint logging
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-29 17:56:50
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-08-30 09:19:52
+entity jpa --class com.aosta.book.BookFail
+field string --fieldName Addr --column --sizeMin 200
+web mvc all --package com.aosta.book.web
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log closed at 2013-08-30 09:21:39

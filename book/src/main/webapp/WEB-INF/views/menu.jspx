@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_bookorder" z="l7V7fPJiEtLnOb3i88hiljx3ssY=">
+            <menu:item id="i_bookorder_new" messageCode="global_menu_new" url="/bookorders?form" z="vgYVBalO1VwQE5nxSSxSVQ5Sy5o="/>
+            <menu:item id="i_bookorder_list" messageCode="global_menu_list" url="/bookorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MAy5v+dZ8QeYP1B68DOOZkxjQO0="/>
+        </menu:category>
+        <menu:category id="c_bookfail" z="dxzIKLIzRZjiE2WzlnTfAp+GOPA=">
+            <menu:item id="i_bookfail_new" messageCode="global_menu_new" url="/bookfails?form" z="LjfeeENWxAp4t8xtcgNZITZ4ZU0="/>
+            <menu:item id="i_bookfail_list" messageCode="global_menu_list" url="/bookfails?page=1&amp;size=${empty param.size ? 10 : param.size}" z="p/E8KKYUAnu5+vA+h8hiQBC/s/k="/>
+        </menu:category>
+    </menu:menu>
+</div>
